@@ -1,0 +1,582 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+/* font */
+.luxurious-script-regular {
+    font-family: "Luxurious Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.oleo-script-swash-caps-regular {
+    font-family: "Oleo Script Swash Caps", system-ui;
+}
+
+.cormorant-garamond-light {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.nanum-myeongjo-regular {
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* 전체 */
+body {
+    background: linear-gradient(#e9e9e9, #a0a0a0);
+}
+.wrap {
+    position: relative;
+    max-width: 450px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* snow */
+.snow {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    top: 0;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 0 3px 3px white;
+}
+
+.inner {
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    height: 45vh;
+    position: relative;
+}
+
+header h1,
+header h2 {
+    font-size: 9rem;
+    font-family: "Luxurious Script", cursive;
+    position: absolute;
+    color: #8d8d8d;
+    font-weight: 400;
+    text-shadow: 2px 2px #ffe6e6;
+}
+
+header h1 {
+    top: 50px; left: 10px;
+    transform: rotate(-20deg);
+}
+
+header h2 {
+    top: 130px;
+    right: 30px;
+    transform: rotate(-20deg);
+}
+
+
+main {
+    font-family: "Nanum Myeongjo", serif;
+}
+
+main section:nth-child(1) {
+    width: 95%;
+    margin: 0 auto;
+}
+
+main .main {
+    display: flex;
+    align-items: center;
+}
+
+main .name1,
+main .name2 {
+    font-family: "Nanum Myeongjo", serif;
+    writing-mode: vertical-rl;
+}
+
+main .main-img {
+    height: 45vh;
+    background: #fff url('../images/pooh.gif') no-repeat center/contain;
+    flex: 1;
+    margin: 0 20px;
+    box-shadow: -10px -10px #545454;
+    position: relative;
+}
+
+main .main-img::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 50px;
+    background: url('../images/mainbullet.png') no-repeat;
+    position: absolute;
+    top: -10px;
+    left: -35px;
+}
+
+main .main-img::after {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 50px;
+    background: url('../images/mainbullet.png') no-repeat;
+    position: absolute;
+    bottom: 0;
+    right: -35px;
+    transform: rotate(180deg);
+}
+
+main section:nth-child(1) h3 {
+    font-family: "Cormorant Garamond", serif;
+    margin: 20px 0 10px;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+main section:nth-child(1) h4 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 0.8rem;
+    margin-bottom: 50px;
+}
+
+main section:nth-child(2) {
+    width: 100%;
+    height: 100vh;
+    background: url('../images/line.png') no-repeat center/100% 100%;
+    overflow: hidden;
+}
+
+main .boy,
+main .girl {
+    width: 90%;
+    margin: 20px auto;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main span {
+    display: block;
+    text-align: center;
+    line-height: 50px;
+}
+
+main .whitebg {
+    width: 55%;
+    height: 100%;
+    background-color: #fff;
+    padding: 10px;
+}
+
+main .boy .whitebg .img {
+    width: 100%;
+    height: 80%;
+    background-color: #545454;
+    background: url('../images/poo.png')no-repeat center/cover;
+}
+main .girl .whitebg .img {
+    width: 100%;
+    height: 80%;
+    background-color: #545454;
+    background: url('../images/pig.jpg')no-repeat center/cover;
+}
+
+main a {
+    width: 100px;
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    border-radius: 7px;
+    background-color: #333;
+}
+
+main p {
+    margin: 10px 0;
+    text-align: center;
+    word-break: keep-all;
+}
+
+main .text {
+    text-align: center;
+    width: 80%;
+    margin: 70px auto;
+    font-size: 0.8rem;
+    line-height: 1.7;
+}
+
+main section:nth-child(3) {
+    margin-bottom: 50px;
+}
+
+main section:nth-child(3) h3 {
+    font-family: "Luxurious Script", cursive;
+    text-align: center;
+    margin: 20px auto 50px;
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+
+main section:nth-child(3) .gallery-slide {
+    width: 95%;
+    height: 31vh;
+    margin: 20px auto;
+    background-color: #fff;
+    padding-top: 15px;
+    position: relative;
+}
+
+main .gallery {
+    width: 93%;
+    height: 25vh;
+    background-color: #b6b6b6;
+}
+main .gallery .swiper-slide:nth-child(1) {
+    background: #fff6ce url('../images/poohs1.gif') no-repeat center/contain;
+}
+main .gallery .swiper-slide:nth-child(2) {
+    background: #ffe0e0 url('../images/poohs2.gif') no-repeat center/contain;
+}
+main .gallery .swiper-slide:nth-child(3) {
+    background: #fffee1 url('../images/poohs3.gif') no-repeat center/contain;
+}
+main .gallery .swiper-slide:nth-child(4) {
+    background: #e0eeff url('../images/poohs4.gif') no-repeat center/contain;
+}
+main .gallery .swiper-slide:nth-child(5) {
+    background: #ebe0ff url('../images/poohs5.gif') no-repeat center/contain;
+}
+main .gallery .swiper-slide:nth-child(6) {
+    background: #ecffe1 url('../images/poohs6.gif') no-repeat center/contain;
+}
+main .gallery .swiper-slide:nth-child(7) {
+    background: #ffffff url('../images/poohs7.gif') no-repeat center/contain;
+}
+
+
+main .gallery-slide .swiper-pagination {
+    bottom: 5px;
+}
+
+main section:nth-child(4) {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding-top: 50px;
+}
+
+main section:nth-child(4) h3 {
+    font-family: "Luxurious Script", cursive;
+    text-align: center;
+    margin: 30px auto;
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+
+main section:nth-child(4) h2 {
+    font-family: "Oleo Script Swash Caps", system-ui;
+    font-size: 5rem;
+    color: rgba(255, 255, 255, 0.5);
+    width: 90%;
+    margin: 0 auto;
+    text-align: right;
+}
+
+main section:nth-child(4) #dday {
+    width: 90%;
+    margin: 0 auto;
+    text-align: right;
+    font-family: "Oleo Script Swash Caps", system-ui;
+    font-size: 2rem;
+    font-weight: normal;
+    color: rgba(255, 0, 0, 0.5);
+    position: absolute;
+    top: 50px; right: 20px;
+}
+
+main table {
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px 0;
+    text-align: center;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    position: relative;
+}
+main table::before {
+    content: '24.11.30(sat) 12: 00';
+    position: absolute;
+    top: -25px; right: 0;
+}
+main th,
+main td {
+    padding: 10px 0;
+}
+
+main td {
+    font-family: "Luxurious Script", cursive;
+    font-size: 1.5rem;
+}
+td.dday {
+    position: relative;
+}
+td.dday::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -20%; left: 0;
+    background-color: rgb(255, 75, 75);
+    clip-path: path("M12 4.419c-2.826-5.695-11.999-4.064-11.999 3.27 0 7.27 9.903 10.938 11.999 15.311 2.096-4.373 12-8.041 12-15.311 0-7.327-9.17-8.972-12-3.27z");
+    transform: rotate(-30deg);
+    animation: heart 2s infinite;
+}
+@keyframes heart {
+    from { opacity: 1;}
+    to { opacity: 0;}
+}
+main section:nth-child(5) {
+    width: 100%;
+}
+
+main section:nth-child(5) h3 {
+    font-family: "Luxurious Script", cursive;
+    text-align: center;
+    margin: 30px auto;
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+
+main section:nth-child(5) iframe {
+    display: block;
+    width: 100%;
+    height: 20vh;
+    border: none;
+    border-top: 10px solid #fff;
+    border-bottom: 10px solid #fff;
+}
+
+main section:nth-child(5) h4 {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: normal;
+    font-weight: bold;
+    padding: 50px 0;
+    text-align: center;
+    font-size: 1.2rem;
+    border-bottom: 1px solid #fff;
+}
+
+main section:nth-child(5) .btn {
+    position: relative;
+    width: 90%;
+    margin: 50px auto;
+    background-color: #a1a1a1;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+main section:nth-child(5) .btn button {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    color: gray;
+    font-size: 1.1rem;
+}
+
+main section:nth-child(5) .btn button img {
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+}
+
+main .way {
+    display: flex;
+    width: 65%;
+    margin: 30px auto 10px;
+    justify-content: space-between;
+}
+
+main .way > * {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #e9e9e9;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    font-size: 2rem;
+    color: #3b3b3b;
+    text-align: center;
+    line-height: 60px;
+}
+main .way > *.on {
+    background-color: #fff;
+    border: 3px solid #e9e9e9;
+}
+main .waymenu {
+    height: 30vh;
+    position: relative;
+}
+
+main .waymenu > * {
+    position: absolute;
+    width: 100%;
+    top: 0; left: 0;
+    display: none;
+}
+main .waymenu > *.on {
+    display: block;
+}
+main .waymenu ul {
+    text-align: center;
+    line-height: 1.5;
+    font-size: 0.9rem;
+}
+main .waymenu p {
+    width: 60%;
+    margin: 10px auto;
+    font-weight: bold;
+}
+main .submenu p {
+    text-align: left;
+}
+
+main .car p {
+    text-align: right;
+}
+
+section:nth-child(6) {}
+section:nth-child(6) h3 {
+    font-family: "Luxurious Script", cursive;
+    text-align: center;
+    margin: 30px auto;
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+#form_wrap {
+    overflow: hidden;
+    width: 90%;
+    margin:  0 auto;
+    height: 446px;
+    position: relative;
+    top: 0px;
+    transition: all 1s ease-in-out .3s;
+}
+
+#form_wrap:before {
+    content: "";
+    position: absolute;
+    bottom: 128px;
+    left: 0px;
+    background: url('../images/before.png') no-repeat center/contain;
+    width: 400px;
+    height: 316px;
+    filter:grayscale(100%);
+
+}
+
+#form_wrap:after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    background: url('../images/after.png')no-repeat center/contain;
+    width: 400px;
+    height: 260px;
+    filter: grayscale(100%);
+}
+
+#form_wrap.hide:after,
+#form_wrap.hide:before {
+    display: none;
+}
+
+#form_wrap:hover {
+    height: 700px;
+    top: -100px;
+}
+#form_wrap:hover form {
+    height: 400px;
+}
+
+form {
+    background: #ffffff url('../images/letter_bg.png');
+    position: relative;
+    top: 200px;
+    overflow: hidden;
+    height: 150px;
+    width: 350px;
+    margin: 0px auto;
+    padding: 20px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    box-shadow: 0px 0px 3px #9d9d9d, inset 0px 0px 27px #fff;
+    transition: all 1s ease-in-out .3s;
+}
+form br {
+    display: none;
+}
+form h4 {
+    text-align: center;
+    font-weight: normal;
+    margin: 40px 0;
+    font-size: 0.9rem;
+}
+form p {
+    font-weight: 600;
+    color: #333;
+}
+form span {
+    font-size: 0.9rem;
+}
+form span i {
+    padding-left: 10px;
+    color: #333;
+}
+footer {
+    width: 100%;
+    background-color: #333;
+}
+
+footer a {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    color: #fff;
+}
+footer a i {
+    padding-right: 10px;
+    font-weight: 100;
+}
